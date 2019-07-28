@@ -1,18 +1,9 @@
-## [Shadowsocks](https://shadowsocks.org) for Android
+## [Shadowsocks](https://shadowsocks.org) FOSS for Android
 
-[![CircleCI](https://circleci.com/gh/shadowsocks/shadowsocks-android.svg?style=shield)](https://circleci.com/gh/shadowsocks/shadowsocks-android)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=21)
-[![Releases](https://img.shields.io/github/downloads/shadowsocks/shadowsocks-android/total.svg)](https://github.com/shadowsocks/shadowsocks-android/releases)
-[![Language: Kotlin](https://img.shields.io/github/languages/top/shadowsocks/shadowsocks-android.svg)](https://github.com/shadowsocks/shadowsocks-android/search?l=kotlin)
+[![Language: Kotlin](https://img.shields.io/github/languages/top/shadowsocks/shadowsocks-android.svg)](https://github.com/kolay-v/shadowsocks-android/search?l=kotlin)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1a21d48d466644cdbcb57a1889abea5b)](https://www.codacy.com/app/shadowsocks/shadowsocks-android?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shadowsocks/shadowsocks-android&amp;utm_campaign=Badge_Grade)
 [![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-orange.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshadowsocks%2Fshadowsocks-android.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshadowsocks%2Fshadowsocks-android?ref=badge_shield)
-
-<a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="48"></a>
-for Android & Chrome OS ([beta](https://play.google.com/apps/testing/com.github.shadowsocks))  
-<a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks.tv"><img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height="48"></a>
-for Android TV ([beta](https://play.google.com/apps/testing/com.github.shadowsocks.tv))
-
 
 ### PREREQUISITES
 
@@ -27,20 +18,9 @@ You can check whether the latest commit builds under UNIX environment by checkin
 * Clone the repo using `git clone --recurse-submodules <repo>` or update submodules using `git submodule update --init --recursive`
 * Build it using Android Studio or gradle script
 
-### BUILD WITH DOCKER
-
-```bash
-mkdir build
-sudo chown 3434:3434 build
-docker run --rm -v ${PWD}/build:/build circleci/android:api-28-ndk bash -c "cd /build; git clone https://github.com/shadowsocks/shadowsocks-android; cd shadowsocks-android; git submodule update --init --recursive; ./gradlew assembleDebug"
-```
-
 ### CONTRIBUTING
 
 If you are interested in contributing or getting involved with this project, please read the CONTRIBUTING page for more information.  The page can be found [here](https://github.com/shadowsocks/shadowsocks-android/blob/master/CONTRIBUTING.md).
-
-
-### [TRANSLATE](https://discourse.shadowsocks.org/t/poeditor-translation-main-thread/30)
 
 ## OPEN SOURCE LICENSES
 
