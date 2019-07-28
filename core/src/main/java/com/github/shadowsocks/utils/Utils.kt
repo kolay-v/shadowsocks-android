@@ -40,7 +40,6 @@ import androidx.annotation.AttrRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.updateLayoutParams
 import androidx.preference.Preference
-import com.crashlytics.android.Crashlytics
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -138,7 +137,6 @@ fun AppCompatActivity.consumeSystemWindowInsetsWithList() {
 }
 
 fun printLog(t: Throwable) {
-    Crashlytics.logException(t)
     t.printStackTrace()
 }
 
